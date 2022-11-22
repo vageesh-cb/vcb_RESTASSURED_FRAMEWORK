@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-19T13:45:39.625Z",
+        "line": 15,
+        "name": "To verify Place is succesfully added by AddPlace API",
+        "description": "",
+        "id": "validate-place-api-s;to-verify-place-is-succesfully-added-by-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 932000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "AddPlace Payload \"vcb\" \"Hindi\" \"CTA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vcb\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"CTA\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDefination.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1712000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceAPI\" with http \"Post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinations.StepDefination.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.StepDefination.api_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 540000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response code is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.StepDefination.in_response_code_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response code is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.StepDefination.in_response_code_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1790000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify placeadded maps to \"vcb\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vcb\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.StepDefination.verify_placeadded_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Place API\u0027s",
+    "description": "",
+    "id": "validate-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation.feature",
+    "tags": []
+  }
+]
